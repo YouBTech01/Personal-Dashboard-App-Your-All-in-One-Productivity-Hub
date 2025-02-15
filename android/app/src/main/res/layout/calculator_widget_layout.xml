@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="8dp"
+	android:background="@drawable/widget_background">
+
+	<TextView
+		android:id="@+id/widget_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Calculator"
+		android:textStyle="bold"
+		android:textSize="16sp"
+		android:gravity="center"/>
+
+	<TextView
+		android:id="@+id/result_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="24sp"
+		android:gravity="end"
+		android:padding="8dp"
+		android:text="0"/>
+
+	<GridLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:columnCount="4"
+		android:rowCount="4"
+		android:layout_marginTop="8dp">
+
+		<Button android:id="@+id/btn_7" android:text="7" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_8" android:text="8" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_9" android:text="9" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_divide" android:text="÷" android:layout_columnWeight="1"/>
+
+		<Button android:id="@+id/btn_4" android:text="4" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_5" android:text="5" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_6" android:text="6" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_multiply" android:text="×" android:layout_columnWeight="1"/>
+
+		<Button android:id="@+id/btn_1" android:text="1" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_2" android:text="2" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_3" android:text="3" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_minus" android:text="-" android:layout_columnWeight="1"/>
+
+		<Button android:id="@+id/btn_clear" android:text="C" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_0" android:text="0" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_equals" android:text="=" android:layout_columnWeight="1"/>
+		<Button android:id="@+id/btn_plus" android:text="+" android:layout_columnWeight="1"/>
+	</GridLayout>
+</LinearLayout>
